@@ -1,325 +1,547 @@
-<!doctype html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
-<!--<![endif]-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="sai" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title></title>
-  <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="apple-touch-icon" href="apple-touch-icon.png">
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+    <title>Sai Venkatesh</title>
+    <!--
+Sai Venkatesh Template
+-->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="css/sai-style.css" />
 
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-  <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
-    crossorigin="anonymous">
-  <link rel="stylesheet" href="css/main.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700"
+      rel="stylesheet"
+    />
+  </head>
+  <body data-spy="scroll" data-target=".navbar-collapse" data-offset="50">
+    <!-- PRE LOADER -->
 
-  <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-</head>
-
-<body>
-  <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-  <header>
-    <div class="base">
-      <div class="menu">
-        <div class="icon">
-          <div class="bar"></div>
-        </div>
+    <div class="preloader">
+      <div class="spinner">
+        <span class="spinner-rotate"></span>
       </div>
-      <div class="icons">
-        <i class="fa fa-user" aria-hidden="true"></i>
-        <i class="fa fa-calendar-o" aria-hidden="true"></i>
-        <i class="fa fa-tachometer" aria-hidden="true"></i>
-      </div>
-      <div class="section">
-        <div class="cover1">
-          <div class="cover2">
-            <a class="content" href="#calender"></a>
-          </div>
-        </div>
-      </div>
-      <a class="section-static top" href="#profile"></a>
-      <a class="section-static bottom" href="#dashboard"></a>
     </div>
-  </header>
 
-  <section class="about-me">
-    <div class="container">
-      <div class="row flex-layout">
-        <div class="col-sm-5 col-xs-12">
-          <img class="img-responsive profile-img" src="img/me.jpg">
+    <!-- Navigation Section -->
+
+    <div class="navbar navbar-fixed-top custom-navbar" role="navigation">
+      <div class="container">
+        <!-- navbar header -->
+        <div class="navbar-header">
+          <button
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+          >
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+            <span class="icon icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">Sai Venkatesh</a>
         </div>
-        <div class="col-sm-7 col-xs-12 name-align">
-          <div class="text">
-            <div class="r">Sai Venkatesh V M</div>
-            <div class="g">Sai Venkatesh V M</div>
-            <div class="b">Sai Venkatesh V M</div>
-          </div>
-          <div class="text text1">
-            <div class="r">UI Developer</div>
-            <div class="g">UI Developer</div>
-            <div class="b">UI Developer</div>
-          </div>
+
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home" class="smoothScroll">Home</a></li>
+            <li><a href="#about" class="smoothScroll">About Me</a></li>
+            <li><a href="#experience" class="smoothScroll">Experiences</a></li>
+          </ul>
         </div>
       </div>
     </div>
-  </section>
-  <section class="skills">
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4 col-xs-12">
-          <h3>About Me.</h3>
-          <div class="svg-attach">
-            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
-              x="0px" y="0px" width="300px" height="300px" viewBox="0 0 600 600" enable-background="new 0 0 600 600" xml:space="preserve">
-              <defs>
-                <clipPath id="monitorEdgeMask">
-                  <path class="monitorEdgeMask" fill="#494D5D" d="M559.7,79h-520C32.5,79,27,84.6,27,91.8V403h546V91.8C573,84.6,566.9,79,559.7,79z"
-                  />
-                </clipPath>
-                <clipPath id="laptopBaseMask">
-                  <path class="laptopBaseMask" fill="#FFFAEB" d="M487,409v15.5c0,3.8-3.2,7.5-7,7.5H120c-3.8,0-7-3.7-7-7.5V409H487z" />
-                </clipPath>
-                <clipPath id="monitorStandMask">
-                  <rect class="monitorStandMask" x="23" y="455" fill="#EA2877" width="550" height="102" />
-                </clipPath>
-                <clipPath id="tabletContentGroupMask">
-                  <path class="tabletContentGroupMask" fill="#BDCCD4" d="M218.5,386.5v-203c0-2.8,2.3-5,5-5h153c2.8,0,5,2.3,5,5v203c0,2.8-2.3,5-5,5h-153
-               C220.8,391.5,218.5,389.3,218.5,386.5z" />
-                </clipPath>
-              </defs>
 
+    <!-- Home Section -->
 
-              <g class="monitorGroup" opacity="1">
-                <g class="monitorStandGroup" clip-path="url(#monitorStandMask)">
-                  <path class="monitorStand" fill="#FFFAEB" d="M386.3,512H374l-20.7-57h-106L226,512h-12.3c-2.6,0-4.7,1.9-4.7,4.5s2.1,4.5,4.7,4.5
-               h172.7c2.6,0,4.7-1.9,4.7-4.5S388.9,512,386.3,512z" />
-                </g>
-                <polygon class="monitorStandShadow" fill="#D9D7D3" points="357.4,467 242.6,467 247.1,455 353.1,455 	" />
-                <g class="monitorEdgeGroup" clip-path="url(#monitorEdgeMask)">
-                  <path class="monitorEdge" fill="#494D5D" d="M559.7,79h-520C32.5,79,27,84.6,27,91.8V403h546V91.8C573,84.6,566.9,79,559.7,79z"
-                  />
-                  <path class="monitorScreen" fill="#BDCCD4" d="M544.5,383.3h-489c-3.8,0-7-3.1-7-7v-271c0-3.8,3.2-7,7-7h489c3.8,0,7,3.2,7,7v271
-               C551.5,380.1,548.3,383.3,544.5,383.3z" />
-                  <g class="monitorContentGroup" opacity="0.6">
-                    <path fill="#E5EBEE" d="M526.8,145H73.2c-3.2,0-5.7-2.6-5.7-5.7v-15.5c0-3.2,2.6-5.7,5.7-5.7h453.5c3.2,0,5.7,2.6,5.7,5.7v15.5
-               C532.5,142.4,529.9,145,526.8,145z" />
-                    <path fill="#8CA5B2" d="M157.9,364.5H73.1c-3.1,0-5.6-2.5-5.6-5.6v-58.7c0-3.1,2.5-5.6,5.6-5.6h84.7c3.1,0,5.6,2.5,5.6,5.6v58.7
-               C163.5,362,161,364.5,157.9,364.5z" />
-                    <path fill="#8CA5B2" d="M526.9,272.5H73.1c-3.1,0-5.6-2.5-5.6-5.6v-93.7c0-3.1,2.5-5.6,5.6-5.6h453.7c3.1,0,5.6,2.5,5.6,5.6v93.7
-               C532.5,270,530,272.5,526.9,272.5z" />
-                    <path fill="#E5EBEE" d="M530.5,306H190.2c-1.1,0-2-0.9-2-2v-7.5c0-1.1,0.9-2,2-2h340.3c1.1,0,2,0.9,2,2v7.5
-               C532.5,305.1,531.6,306,530.5,306z" />
-                    <path fill="#E5EBEE" d="M530.5,334.3H190.2c-1.1,0-2-0.9-2-2v-7.5c0-1.1,0.9-2,2-2h340.3c1.1,0,2,0.9,2,2v7.5
-               C532.5,333.4,531.6,334.3,530.5,334.3z" />
-                    <path fill="#E5EBEE" d="M530.5,364.5H190.2c-1.1,0-2-0.9-2-2V355c0-1.1,0.9-2,2-2h340.3c1.1,0,2,0.9,2,2v7.5
-               C532.5,363.6,531.6,364.5,530.5,364.5z" />
-                  </g>
-                </g>
-                <path class="monitorBottom" fill="#FFFAEB" d="M573,403v39c0,7.1-6.1,13-13.3,13h-520c-7.2,0-12.7-5.9-12.7-13v-39H573z" />
-
-                <circle class="monitorLogo" fill="#A4ACBB" cx="300" cy="426" r="10" />
-
-              </g>
-              <g class="laptopGroup" opacity="1">
-                <!--path class="laptopEdge" fill="#FFFAEB" d="M468.5,175.5v226h-337v-226c0-3.9,3.2-7,7-7h323C465.3,168.5,468.5,171.6,468.5,175.5z"
-               /-->
-                <path class="laptopEdgeLeft" fill="#FFFAEB" d="M310,401.5H131.5v-226c0-3.9,3.2-7,7-7H310" />
-                <path class="laptopEdgeRight" fill="#FFFAEB" d="M290,168.5h171.5c3.8,0,7,3.1,7,7v226H290" />
-                <g class="laptopBaseGroup" clip-path="url(#laptopBaseMask)">
-                  <path class="laptopBase" fill="#FFFAEB" d="M487,409v15.5c0,3.8-3.2,7.5-7,7.5H120c-3.8,0-7-3.7-7-7.5V409H487z" />
-                </g>
-                <polygon class="laptopTrackpad" fill="#A4ACBB" points="326.7,421.8 273.3,421.8 268.3,414.2 331.7,414.2 	" />
-                <path class="laptopScreen" fill="#BDCCD4" d="M452.7,391.9H147.3c-3.8,0-7-3.1-7-7V185.6c0-3.8,3.2-7,7-7h305.3c3.9,0,7,3.2,7,7
-             v199.3C459.7,388.8,456.5,391.9,452.7,391.9z" />
-                <g class="laptopContentGroup" opacity="0.6">
-                  <path fill="#E5EBEE" d="M437.8,212.3H164.1c-1.9,0-3.5-1.6-3.5-3.5v-9.4c0-1.9,1.6-3.5,3.5-3.5h273.7c1.9,0,3.5,1.6,3.5,3.5v9.4
-               C441.2,210.7,439.7,212.3,437.8,212.3z" />
-                  <path fill="#8CA5B2" d="M215.1,363.8H164c-1.9,0-3.4-1.5-3.4-3.4V325c0-1.9,1.5-3.4,3.4-3.4h51.1c1.9,0,3.4,1.5,3.4,3.4v35.4
-               C218.5,362.3,217,363.8,215.1,363.8z" />
-                  <path fill="#8CA5B2" d="M437.8,307.3H164c-1.9,0-3.4-1.5-3.4-3.4v-74.6c0-1.9,1.5-3.4,3.4-3.4h273.8c1.9,0,3.4,1.5,3.4,3.4v74.6
-               C441.2,305.8,439.7,307.3,437.8,307.3z" />
-                  <path fill="#E5EBEE" d="M440,328.5H234.6c-0.7,0-1.2-0.5-1.2-1.2v-4.5c0-0.7,0.5-1.2,1.2-1.2H440c0.7,0,1.2,0.5,1.2,1.2v4.5
-               C441.2,327.9,440.7,328.5,440,328.5z" />
-                  <path fill="#E5EBEE" d="M440,345.5H234.6c-0.7,0-1.2-0.5-1.2-1.2v-4.5c0-0.7,0.5-1.2,1.2-1.2H440c0.7,0,1.2,0.5,1.2,1.2v4.5
-               C441.2,345,440.7,345.5,440,345.5z" />
-                  <path fill="#E5EBEE" d="M440,363.8H234.6c-0.7,0-1.2-0.5-1.2-1.2v-4.5c0-0.7,0.5-1.2,1.2-1.2H440c0.7,0,1.2,0.5,1.2,1.2v4.5
-               C441.2,363.3,440.7,363.8,440,363.8z" />
-                </g>
-              </g>
-
-              <g class="phoneGroup" opacity="0">
-                <path class="phoneEdge" fill="#FFFAEB" d="M255.2,371.4V198.6c0-3.2,2.7-5.9,5.9-5.9h77.9c3.2,0,5.9,2.7,5.9,5.9v172.9
-               c0,3.2-2.7,5.9-5.9,5.9h-77.9C257.8,377.3,255.2,374.7,255.2,371.4z" />
-                <circle class="phoneButton" fill="#9AA3B2" cx="300" cy="363.1" r="6" />
-                <circle class="phoneCamera" fill="#A4ACBB" cx="284.3" cy="203.6" r="1.5" />
-                <rect class="phoneScreen" x="262.1" y="214.3" fill="#BDCCD4" width="75.7" height="135.3" />
-
-                <line class="phoneSpeaker" fill="none" stroke="#9AA3B2" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10"
-                  x1="292.5" y1="203" x2="307.5" y2="203" />
-
-                <g class="phoneContentGroup" opacity="0.6">
-                  <path fill="#E5EBEE" d="M327.8,235.6h-55.3c-1,0-1.9-0.9-1.9-1.9v-7.3c0-1,0.9-1.9,1.9-1.9h55.3c1,0,1.9,0.9,1.9,1.9v7.3
-               C329.7,234.8,328.8,235.6,327.8,235.6z" />
-                  <path fill="#8CA5B2" d="M294.3,338.7h-21.9c-1,0-1.9-0.8-1.9-1.9v-25c0-1,0.8-1.9,1.9-1.9h21.9c1,0,1.9,0.8,1.9,1.9v25
-               C296.2,337.8,295.3,338.7,294.3,338.7z" />
-                  <path fill="#8CA5B2" d="M327.8,300.3h-55.4c-1,0-1.9-0.8-1.9-1.9v-51.7c0-1,0.8-1.9,1.9-1.9h55.4c1,0,1.9,0.8,1.9,1.9v51.7
-               C329.7,299.4,328.8,300.3,327.8,300.3z" />
-                  <path fill="#E5EBEE" d="M329,314.7h-25.6c-0.4,0-0.7-0.3-0.7-0.7v-3.4c0-0.4,0.3-0.7,0.7-0.7H329c0.4,0,0.7,0.3,0.7,0.7v3.4
-               C329.7,314.4,329.4,314.7,329,314.7z" />
-                  <path fill="#E5EBEE" d="M329,338.7h-25.6c-0.4,0-0.7-0.3-0.7-0.7v-3.4c0-0.4,0.3-0.7,0.7-0.7H329c0.4,0,0.7,0.3,0.7,0.7v3.4
-               C329.7,338.4,329.4,338.7,329,338.7z" />
-                  <path fill="#E5EBEE" d="M329,326.3h-25.6c-0.4,0-0.7-0.3-0.7-0.7v-3.4c0-0.4,0.3-0.7,0.7-0.7H329c0.4,0,0.7,0.3,0.7,0.7v3.4
-               C329.7,326,329.4,326.3,329,326.3z" />
-                </g>
-              </g>
-
-              <g class="tabletGroup" opacity="1">
-                <path class="tabletEdge" fill="#FFFAEB" d="M198.5,404.5v-239c0-7.7,6.3-14,14-14h175c7.7,0,14,6.3,14,14v239c0,7.7-6.3,14-14,14
-               h-175C204.8,418.5,198.5,412.2,198.5,404.5z" />
-                <path class="tabletScreen" fill="#BDCCD4" d="M218.5,386.5v-203c0-2.8,2.3-5,5-5h153c2.8,0,5,2.3,5,5v203c0,2.8-2.3,5-5,5h-153
-               C220.8,391.5,218.5,389.3,218.5,386.5z" />
-                <circle class="tabletButton" fill="#A4ACBB" cx="300" cy="406" r="6" />
-                <circle class="tabletCamera" fill="#A4ACBB" cx="300" cy="168" r="2" />
-                <g class="maskedTabletContentGroup" clip-path="url(#tabletContentGroupMask)">
-                  <g class="tabletContentGroup" opacity="0.6">
-                    <path fill="#E5EBEE" d="M363.6,217.4H236.9c-1.9,0-3.5-1.6-3.5-3.5v-9.4c0-1.9,1.6-3.5,3.5-3.5h126.7c1.9,0,3.5,1.6,3.5,3.5v9.4
-                   C367,215.8,365.5,217.4,363.6,217.4z" />
-                    <path fill="#8CA5B2" d="M288,368.9h-51.1c-1.9,0-3.4-1.5-3.4-3.4v-35.4c0-1.9,1.5-3.4,3.4-3.4H288c1.9,0,3.4,1.5,3.4,3.4v35.4
-                   C291.4,367.4,289.8,368.9,288,368.9z" />
-                    <path fill="#8CA5B2" d="M363.6,312.4H236.8c-1.9,0-3.4-1.5-3.4-3.4v-74.6c0-1.9,1.5-3.4,3.4-3.4h126.8c1.9,0,3.4,1.5,3.4,3.4V309
-                   C367,310.9,365.5,312.4,363.6,312.4z" />
-                    <path fill="#E5EBEE" d="M365.8,333.6h-58.4c-0.7,0-1.2-0.5-1.2-1.2v-4.5c0-0.7,0.5-1.2,1.2-1.2h58.4c0.7,0,1.2,0.5,1.2,1.2v4.5
-                   C367,333.1,366.5,333.6,365.8,333.6z" />
-                    <path fill="#E5EBEE" d="M365.8,368.9h-58.4c-0.7,0-1.2-0.5-1.2-1.2v-4.5c0-0.7,0.5-1.2,1.2-1.2h58.4c0.7,0,1.2,0.5,1.2,1.2v4.5
-                   C367,368.4,366.5,368.9,365.8,368.9z" />
-                    <path fill="#E5EBEE" d="M365.8,350.6h-58.4c-0.7,0-1.2-0.5-1.2-1.2v-4.5c0-0.7,0.5-1.2,1.2-1.2h58.4c0.7,0,1.2,0.5,1.2,1.2v4.5
-                   C367,350.1,366.5,350.6,365.8,350.6z" />
-                  </g>
-                </g>
-              </g>
-            </svg>
-
+    <section id="home" class="parallax-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="home-img"></div>
           </div>
-        </div>
-        <div class="col-sm-6 col-xs-12">
-          <p>
-            My name is Sai Venkatesh, date when i saw light for the first time: 23.05.1994. I live in Madras. Im not really focused person,
-            i love creating things that are beautiful and functional.I am a Front End Developer / Creative Customizer with
-            lots of passion towards Computer and Internet. As a UI engineer, I enjoy bridging the gap between engineering
-            and design — combining my technical knowledge with my keen eye for design to create a beautiful product. My goal
-            is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect
-            user experiences.
-          </p>
-          <p>
-            <strong>When I'm not in front of a computer screen</strong>, I'm probably go for long rides with the friends in biker
-            <i class="fa fa-motorcycle" aria-hidden="true"></i> group.
-          </p>
-          <div class="skills-section">
-            <div class="section__title">Skills</div>
-            <div class="section__content">
-              <!-- <p>I’ve picked up quite a few skills during the course of my three co-ops, and aim to improve these skills everyday. Here are a few of the technologies that I have experience with:</p> -->
-              <div class="skillz">
-                <div class="skillz__category">
-                  <div class="skillz__category__label">Languages</div>
-                  <ul>
-                    <li class="skillz__category__item">
-                      <i class="devicon-javascript-plain colored"></i> JavaScript </li>
-                    <li class="skillz__category__item">
-                      <i class="devicon-jquery-plain-wordmark colored"></i> jquery</li>
-                    <li class="skillz__category__item">
-                      <i class="devicon-html5-plain-wordmark colored html"></i> HTML 5</li>
-                    <li class="skillz__category__item">
-                      <i class="devicon-css3-plain-wordmark colored"></i> CSS3</li>
-                    <li class="skillz__category__item">
-                      <i class="devicon-sass-original colored"></i> SaSS</li>
-                  </ul>
-                </div>
-                <div class="skillz__category">
-                  <div class="skillz__category__label">Frameworks</div>
-                  <ul>
-                    <li class="skillz__category__item">
-                      <i class="devicon-bootstrap-plain-wordmark colored"></i> Bootstrap</li>
-                    <li class="skillz__category__item">
-                      <i class="devicon-foundation-plain-wordmark colored"></i> Foundation</li>
 
-                    <li class="skillz__category__item">
-                      <i class="devicon-wordpress-plain-wordmark colored"></i> Wordpress</li>
-                    <li class="skillz__category__item">
-                      <i class="devicon-angularjs-plain colored"></i> Angular</li>
+          <div class="col-md-6 col-sm-6">
+            <div class="home-thumb">
+              <div class="section-title">
+                <h4 class="wow fadeInUp" data-wow-delay="0.3s">
+                  welcome to my website
+                </h4>
+                <h1 class="wow fadeInUp" data-wow-delay="0.6s">
+                  Hello, I am <strong>Sai Venkatesh</strong> currently based in Dubai.
+                </h1>
+                <p class="wow fadeInUp" data-wow-delay="0.9s">
+                  Driven by a passion for web technology, I've spent over a decade honing my skills in HTML, CSS, and UI development. I've channeled this passion into countless projects, each one a testament to my commitment to crafting exceptional user experiences.
+                </p>
 
-                  </ul>
-                </div>
-                <div class="skillz__category">
-                  <div class="skillz__category__label">Tools</div>
-                  <ul>
-
-                    <li class="skillz__category__item">
-                      <i class="devicon-bitbucket-plain-wordmark colored"></i> Bitbucket</li>
-                    <li class="skillz__category__item">
-                      <i class="devicon-github-plain-wordmark colored"></i> Git &amp; Github</li>
-                    <li class="skillz__category__item">
-                      <i class="devicon-gulp-plain colored"></i> Gulp</li>
-                    <li class="skillz__category__item">
-                      <i class="devicon-chrome-plain-wordmark colored"></i> Chrome DevTools</li>
-                  </ul>
-                </div>
-                <!-- <div class="skillz__category">
-                  <div class="skillz__category__label">Design</div>
-                  <ul>
-                    <li class="skillz__category__item">Sketch</li>
-                    <li class="skillz__category__item">InDesign</li>
-                    <li class="skillz__category__item">InVision</li>
-                    <li class="skillz__category__item">Prototyping</li>
-                    <li class="skillz__category__item">Wireframing</li>
-                    <li class="skillz__category__item">User Testing</li>
-                  </ul>
-                </div> -->
+                <a
+                  href="#about"
+                  class="wow fadeInUp smoothScroll section-btn btn btn-success"
+                  data-wow-delay="1.4s"
+                  >Get Started</a
+                >
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-  <script>
-    window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
-  </script>
+    <!-- About Section -->
 
-  <script src="js/vendor/bootstrap.min.js"></script>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/TweenMax.min.js"></script>
-  <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/35984/AnticipateEase.min.js"></script>
+    <section id="about" class="parallax-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="about-thumb">
+              <div class="wow fadeInUp section-title" data-wow-delay="0.4s">
+                <h1>About me</h1>
+                <p class="color-yellow">
+                  Plant Love, Grow Peace !
+                </p>
+              </div>
+              <div class="wow fadeInUp" data-wow-delay="0.8s">
+                <p>
+                  I am a Front End Developer / Creative Customizer with lots of passion towards Computer and Internet. As a UI engineer, I enjoy bridging the gap between engineering and design — combining my technical knowledge with my keen eye for design to create a beautiful product. My goal is to always build applications that are scalable and efficient under the hood while providing engaging, pixel-perfect user experiences.
+                </p>
+                <p>
+                  <strong>When I'm not in front of a computer screen</strong>, I'm probably go for long rides with the friends in biker
+                  <i class="fa fa-motorcycle" aria-hidden="true"></i> group.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-yellow col-md-6 col-sm-6">
+            <div class="skill-thumb">
+              <div
+                class="wow fadeInUp section-title color-white"
+                data-wow-delay="1.2s"
+              >
+                <h1>My Skills</h1>
+                <p class="color-white">HTML CSS JS . Responsive web design - Figma . Javascript Vue.Js .React</p>
+              </div>
 
-  
+              <div class="wow fadeInUp skills-thumb" data-wow-delay="1.6s">
+                <strong>HTML5 & CSS3</strong>
+                <span class="color-white pull-right">95%</span>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-primary"
+                    role="progressbar"
+                    aria-valuenow="95"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 95%"
+                  ></div>
+                </div>
 
-  <script src="js/main.js"></script>
-  <script type="text/javascript">
-    var setElementHeight = function () {
-      var height = $(window).height();
-      $('.about-me,.skills').height(height);
-      console.log(height);
-    };
-    $(document).ready(function () {
-      setElementHeight();
-    });
-    $(window).on("resize", function () {
-      setElementHeight();
-    }).resize();
-  </script>
+                <strong>Responsive web design</strong>
+                <span class="color-white pull-right">90%</span>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-primary"
+                    role="progressbar"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 90%"
+                  ></div>
+                </div>
 
-  
-</body>
+                <strong>Figma . Adobe XD</strong>
+                <span class="color-white pull-right">60%</span>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-primary"
+                    role="progressbar"
+                    aria-valuenow="60"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 60%"
+                  ></div>
+                </div>
 
+                <strong>Javascript</strong>
+                <span class="color-white pull-right">80%</span>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-primary"
+                    role="progressbar"
+                    aria-valuenow="80"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 80%"
+                  ></div>
+                </div>
+
+                <strong>React . Redux</strong>
+                <span class="color-white pull-right">70%</span>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-primary"
+                    role="progressbar"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 70%"
+                  ></div>
+                </div>
+
+                <strong>Vue Js . Vuex </strong>
+                <span class="color-white pull-right">70%</span>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-primary"
+                    role="progressbar"
+                    aria-valuenow="70"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 70%"
+                  ></div>
+                </div>
+
+                <strong>Unit Testing - Jest </strong>
+                <span class="color-white pull-right">50%</span>
+                <div class="progress">
+                  <div
+                    class="progress-bar progress-bar-primary"
+                    role="progressbar"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    style="width: 50%"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Service Section -->
+
+    <section id="service" class="parallax-section">
+      <div class="container">
+        <div class="row">
+          <div class="bg-yellow col-md-3 col-sm-6">
+            <div
+              class="wow fadeInUp color-white service-thumb"
+              data-wow-delay="0.8s"
+            >
+              <i class="fa fa-brands fa-github"></i>
+              <h3>Coding</h3>
+              <a class="btn btn-warning rounded-pill px-3" href="https://github.com/sai0909/" title="take me to">Check now</a>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div
+              class="wow fadeInUp color-white service-thumb"
+              data-wow-delay="1.2s"
+            >
+            <i class="fa fa-brands fa-linkedin"></i>
+              <h3>Linkedin</h3>
+              <a class="btn btn-warning rounded-pill px-3" href="https://www.linkedin.com/in/sai0909/" title="take me to">Hello!</a>
+            </div>
+          </div>
+
+          <div class="bg-dark col-md-3 col-sm-6">
+            <div
+              class="wow fadeInUp color-white service-thumb"
+              data-wow-delay="1.6s"
+            >
+            <i class="fa fa-solid fa-envelope"></i>
+              <h3>Connect</h3>
+              <a class="btn btn-warning rounded-pill px-3" href="https://www.linkedin.com/in/sai0909/" title="take me to">Talk</a>
+            </div>
+          </div>
+
+          <div class="bg-white col-md-3 col-sm-6">
+            <div class="wow fadeInUp service-thumb" data-wow-delay="1.8s">
+              <i class="fa fa-brands fa-instagram"></i>
+              <h3>Insta</h3>
+              <a class="btn btn-warning rounded-pill px-3" href="https://www.instagram.com/saivenkateshvm" title="take me to">Chat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+
+    <section id="experience" class="parallax-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="background-image experience-img"></div>
+          </div>
+
+          <div class="col-md-6 col-sm-6">
+            <div class="color-white experience-thumb">
+              <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+                <h1>My Experiences</h1>
+                <p class="color-white">Previous companies and my tasks</p>
+              </div>
+
+              <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+                <div class="media-object media-left">
+                  <i class="fa fa-laptop"></i>
+                </div>
+                <div class="media-body">
+                  <h3 class="media-heading">
+                    UI Analyst <small>June 2023 – present</small>
+                  </h3>
+                  <p class="color-white">
+                   Alshaya Group
+                  </p>
+                </div>
+              </div>
+
+              <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+                <div class="media-object media-left">
+                  <i class="fa fa-laptop"></i>
+                </div>
+                <div class="media-body">
+                  <h3 class="media-heading">
+                    Senior Consultant <small>Sep 2020 - May 2023</small>
+                  </h3>
+                  <p class="color-white">
+                    Capgemini, Hyderabad
+                  </p>
+                </div>
+              </div>
+              <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+                <div class="media-object media-left">
+                  <i class="fa fa-laptop"></i>
+                </div>
+                <div class="media-body">
+                  <h3 class="media-heading">
+                    Software Technologist UI <small>Aug 2019 - Sep 2020</small>
+                  </h3>
+                  <p class="color-white">
+                    CES Information Technologies, Chennai
+                  </p>
+                </div>
+              </div>
+              <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+                <div class="media-object media-left">
+                  <i class="fa fa-laptop"></i>
+                </div>
+                <div class="media-body">
+                  <h3 class="media-heading">
+                    Usability Engineer <small>June 2018 – Aug 2019</small>
+                  </h3>
+                  <p class="color-white">
+                    Aspire Systems, Chennai
+                  </p>
+                </div>
+              </div>
+              <div class="wow fadeInUp color-white media" data-wow-delay="1.6s">
+                <div class="media-object media-left">
+                  <i class="fa fa-laptop"></i>
+                </div>
+                <div class="media-body">
+                  <h3 class="media-heading">
+                    UI Engineer <small>Aug 2015 – Feb 2018</small>
+                  </h3>
+                  <p class="color-white">
+                    Fleet Studio Technologies Pvt Ltd, Chennai
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+
+    <section id="education" class="parallax-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-6">
+            <div class="color-white education-thumb">
+              <div class="wow fadeInUp section-title" data-wow-delay="0.8s">
+                <h1>My Education</h1>
+              </div>
+
+              <div class="wow fadeInUp color-white media" data-wow-delay="1.2s">
+                <div class="media-object media-left">
+                  <i class="fa fa-laptop"></i>
+                </div>
+                <div class="media-body">
+                  <h3 class="media-heading">
+                    B.E. Computer Science <small>2011 – 2015</small>
+                  </h3>
+                  <p class="color-white">
+                    KLN College of Engineering,
+                    Pottapalayam
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-sm-6">
+            <div class="background-image education-img"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quotes Section -->
+
+    <!-- <section id="quotes" class="parallax-section">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-offset-1 col-md-10 col-sm-12">
+            <i class="wow fadeInUp fa fa-star" data-wow-delay="0.6s"></i>
+            <h2 class="wow fadeInUp" data-wow-delay="0.8s">
+              Proin lobortis eu diam et facilisis. Fusce nisi nibh, molestie in
+              vestibulum quis, auctor et orci.
+            </h2>
+            <p class="wow fadeInUp" data-wow-delay="1s">
+              Curabitur at pulvinar ante. Duis dui urna, faucibus eget felis eu,
+              iaculis congue sem.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Contact Section -->
+
+    <!-- <section id="contact" class="parallax-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-sm-12">
+            <div class="contact-form">
+              <div class="wow fadeInUp section-title" data-wow-delay="0.2s">
+                <h1 class="color-white">Say hello..</h1>
+                <p class="color-white">
+                  Integer ut consectetur est. In cursus orci non ipsum gravida
+                  dignissim.
+                </p>
+              </div>
+
+              <div id="contact-form">
+                <form action="#template-mo" method="post">
+                  <div class="wow fadeInUp" data-wow-delay="1s">
+                    <input
+                      name="fullname"
+                      type="text"
+                      class="form-control"
+                      id="fullname"
+                      placeholder="Your Name"
+                    />
+                  </div>
+                  <div class="wow fadeInUp" data-wow-delay="1.2s">
+                    <input
+                      name="email"
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      placeholder="Your Email"
+                    />
+                  </div>
+                  <div class="wow fadeInUp" data-wow-delay="1.4s">
+                    <textarea
+                      name="message"
+                      rows="5"
+                      class="form-control"
+                      id="message"
+                      placeholder="Write your message..."
+                    ></textarea>
+                  </div>
+                  <div
+                    class="wow fadeInUp col-md-6 col-sm-8"
+                    data-wow-delay="1.6s"
+                  >
+                    <input
+                      name="submit"
+                      type="submit"
+                      class="form-control"
+                      id="submit"
+                      value="Send"
+                    />
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="background-image contact-img"></div>
+          </div>
+
+          <div class="bg-dark col-md-3 col-sm-6">
+            <div class="contact-thumb">
+              <div class="wow fadeInUp contact-info" data-wow-delay="0.6s">
+                <h3 class="color-white">Visit my office</h3>
+                <p>456 New Street 22000, New York City, USA</p>
+              </div>
+
+              <div class="wow fadeInUp contact-info" data-wow-delay="0.8s">
+                <h3 class="color-white">Contact.</h3>
+                <p><i class="fa fa-phone"></i> 01-0110-0220</p>
+                <p>
+                  <i class="fa fa-envelope-o"></i>
+                  <a href="mailto:hello@company.co">hello@company.co</a>
+                </p>
+                <p><i class="fa fa-globe"></i> <a href="#">company.co</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+
+    <!-- Footer Section -->
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+            <div class="wow fadeInUp footer-copyright" data-wow-delay="1.8s">
+              <p>
+                  With Love
+                <a href="http://linkedin.com/in/sai0909" target="_parent"
+                  >Sai</a
+                >
+              </p>
+            </div>
+            <!-- <ul class="wow fadeInUp social-icon" data-wow-delay="2s">
+              <li><a href="#" class="fa fa-facebook"></a></li>
+              <li><a href="#" class="fa fa-twitter"></a></li>
+              <li><a href="#" class="fa fa-google-plus"></a></li>
+              <li><a href="#" class="fa fa-dribbble"></a></li>
+              <li><a href="#" class="fa fa-linkedin"></a></li>
+            </ul> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.parallax.js"></script>
+    <script src="js/smoothscroll.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/custom.js"></script>
+  </body>
 </html>
